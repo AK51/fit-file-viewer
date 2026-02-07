@@ -1,4 +1,5 @@
 # FITS Viewer
+![Uploading fit_main.pngâ€¦]()
 
 A Python-based FITS (Flexible Image Transport System) file viewer for astronomy.
 
@@ -226,3 +227,4 @@ The FITS Viewer is now feature-complete with professional-grade functionality! ð
 ## License
 
 This project is part of the FITS Viewer specification implementation.
+
