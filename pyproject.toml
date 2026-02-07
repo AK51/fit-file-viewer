@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fits-viewer"
+version = "0.1.0"
+description = "A Python-based FITS file viewer for astronomy"
+authors = [{name = "FITS Viewer Team"}]
+requires-python = ">=3.10"
+dependencies = [
+    "astropy>=5.0",
+    "PyQt5>=5.15",
+    "matplotlib>=3.5",
+    "numpy>=1.21",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "hypothesis>=6.0",
+    "pytest-qt>=4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
